@@ -31,11 +31,19 @@ html::-webkit-scrollbar {
 
 body {
   font-family: var(--font-body);
-  background: url('/images/Gemini_Generated_Image_usn94tusn94tusn9.png') center/cover fixed no-repeat;
   color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: url('/images/Gemini_Generated_Image_usn94tusn94tusn9.png') center/cover no-repeat;
 }
 
 a {
