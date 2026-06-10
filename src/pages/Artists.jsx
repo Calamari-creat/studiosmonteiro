@@ -1,13 +1,15 @@
 import useScrollReveal from '../hooks/useScrollReveal'
 import './Artists.css'
 
+const base = import.meta.env.BASE_URL
+
 const artists = [
   {
     name: 'Leonardo Monteiro',
     role: 'Tatuador & Artista',
     specialties: ['Blackwork', 'Realismo', 'Animes', 'Florais'],
     bio: 'Artista versátil especializado em blackwork, realismo, animes e florais. Cada traço é pensado para transformar idéias em arte única na pele.',
-    image: '/images/leonardo.jpg',
+    image: `${base}images/leonardo.jpg`,
   },
 ]
 
